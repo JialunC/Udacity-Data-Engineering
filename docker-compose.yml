@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  postgres-db:
+    image: postgres:12.2-alpine
+    volumes:
+      - db_volume:/var/lib/postgresql/data/
+    env_file:
+      - ./services/postgres/dev.env
+    stop_grace_period: 10s
+  
+  jupyter:
+    image: jupyter/datascience-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/work
+  
+volumes:
+  db_volume:
