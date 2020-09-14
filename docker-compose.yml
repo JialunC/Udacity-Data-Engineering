@@ -10,7 +10,9 @@ services:
     stop_grace_period: 10s
   
   jupyter:
-    image: jupyter/datascience-notebook
+    build:
+      context: ./services/jupyter
+      dockerfile: Dockerfile
     ports:
       - 8888:8888
     volumes:
