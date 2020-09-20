@@ -2,7 +2,7 @@
 
 This project is developed based on [san089/Udacity-Data-Engineering-Projects](https://github.com/san089/Udacity-Data-Engineering-Projects). 
 
-In order to make it easier to setup and run, I dockerize Jupyter, Postgres, Cassandra, so you can have an isolated playground environment.
+For project 1 and 2, in order to make it easier to setup and run, I dockerize Jupyter, Postgres, Cassandra, so you can have an isolated playground environment.
 
 ## To start
 
