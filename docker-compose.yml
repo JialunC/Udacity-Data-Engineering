@@ -1,6 +1,12 @@
 version: '3.7'
 
 services:
+services:
+  cassandra:
+    image: cassandra:3.11.8
+    volumes:
+      - cassandra_volumne:/var/lib/cassandra
+
   postgres-db:
     image: postgres:12.2-alpine
     volumes:
@@ -20,3 +26,4 @@ services:
   
 volumes:
   db_volume:
+  cassandra_volumne:
