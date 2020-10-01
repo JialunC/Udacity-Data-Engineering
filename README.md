@@ -26,7 +26,7 @@ jupyter_1      |      or http://127.0.0.1:8888/?token=787bb445bc8c2ef2cf9f9e2588
 3. Navigate to the AWS website and find the **AWS Secrets Manager** service.
 4. Save your redshift username and password in Secrets Manager, get the arns.
 5. Put your arn ids in the file in `/aws/aws_redshift_demo/main.tf`.
-6. Run `terraform plan` in the `/aws/aws_redshift_demo` folder to inspect what resources will be created.
+6. Run `terraform init` then `terraform plan` in the `/aws/aws_redshift_demo` folder to inspect what resources will be created.
 7. Run `terraform apply` to apply those changes.
 
 To destroy resources created from this terraform module:
