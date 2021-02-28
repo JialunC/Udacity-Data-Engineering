@@ -13,4 +13,5 @@ resource "aws_redshift_cluster" "this" {
   iam_roles                 = var.iam_roles
   vpc_security_group_ids    = var.vpc_security_group_ids
   cluster_subnet_group_name = aws_redshift_subnet_group.this.id
+  skip_final_snapshot = true
 }
